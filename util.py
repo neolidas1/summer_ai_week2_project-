@@ -166,6 +166,12 @@ class Queue:
     def isEmpty(self):
         "Returns true if the queue is empty"
         return len(self.list) == 0
+    
+    def contains(self, item):
+        for i in self.list: 
+            if i == item:
+                return True  
+        return False
 
 class PriorityQueue:
     """
